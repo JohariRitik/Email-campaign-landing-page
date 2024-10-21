@@ -27,7 +27,7 @@ grid-row-gap: 0px;
 }
 
 .year-box, .product-box{
-    border: 2px dashed blue;
+    border: 4px dashed blue;
     border-radius: 20px;
     display:flex;
     flex-direction: column;
@@ -53,12 +53,12 @@ grid-row-gap: 0px;
 }
 .calendar-text{
     grid-area: 2/2/3/3;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .dollar-text{
     grid-area: 5/6/6/7;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 img{
@@ -249,6 +249,7 @@ img{
         width: 100% !important;
         text-align: center;
         font-size: 14px;
+        padding-bottom: 1%;
     }
     .page-4 .heading{
         font-size: 30px;
@@ -442,7 +443,7 @@ img{
         width:200px;
     }
     .page-5 .card2 img{
-        width:380px;
+        width:340px;
         height:220px;
     }
     
