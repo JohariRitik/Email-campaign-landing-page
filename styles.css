@@ -6,9 +6,9 @@ body{
     background-color: white;
     font-size: 20px;
 }
-.page-1{
+/* .page-1{
     height:80vh;
-}
+} */
 .heading{
     width:60%;
     overflow-x: none;
@@ -23,7 +23,7 @@ grid-template-columns: 3fr 8fr repeat(3, 1fr) 11fr 1fr  24fr;
 grid-template-rows: 1fr 1fr 1fr 5fr repeat(3, 1fr) 5fr 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .year-box, .product-box{
@@ -81,12 +81,12 @@ img{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height:100vh;
+    /* height:100vh; */
     grid-gap: 20px;
 }
-.page-2{
-    height:80vh;
-}
+/* .page-2{
+    height:100vh;
+} */
 /* .page-2{
     margin-top: -20%;
 } */
@@ -102,11 +102,10 @@ img{
     grid-row:2/5;
 }
 /* ---------------PAGE-3---------------- */
- .page-3{
+ /* .page-3{
     height:60vh;
-} 
+}  */
 .page-3-container{
-    
     display:flex;
     justify-content: space-around;
 }
@@ -131,7 +130,11 @@ img{
     height: 200px;
     width:200px;
 }
+
+
 /* page 4 */
+
+
 .page-4 img{
    /* width:150px;
    height:150px; */
@@ -140,9 +143,9 @@ img{
     object-fit: cover;
     
 }
-.page-4{
+/* .page-4{
     height:80vh;
-}
+} */
 .page-4-container{
     margin-top: 5%;
     display:flex;
@@ -171,8 +174,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap:5px;
-    height:80vh;
-   
+    /* height:80vh; */
 }
 .page5 .card1{
     grid-row:1/2;
@@ -211,7 +213,7 @@ img{
 
 /* media queries  -- css for small devices*/
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 768px) {
     body{
         font-family: Arial, sans-serif;
         /* margin-left: 2%; */
@@ -220,10 +222,14 @@ img{
         /* background-color: white; */
         font-size: 20px;
     }
-    .page-1{
-        height: auto;
-        margin-bottom: 50vh;
-        /* margin-bottom: -20%; */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .page-1,.page-2,.page-3,.page-4,.page-4,.page-5{
+        padding-bottom: 10%;
     }
     .container{
         display: flex;
@@ -257,7 +263,7 @@ img{
     .grid {
         display: grid;
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 4fr 1fr 8fr 6fr 1fr 1fr 8fr 6fr;
+        grid-template-rows: 20px 1fr 3fr 6fr 20px 1fr 3fr 4fr;
         grid-column-gap: 0px;
         grid-row-gap: 10px;
         width:80vw;
@@ -321,7 +327,7 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height:auto;
+        /* height:auto; */
         /* margin-bottom: -50%; */
     }
     .grid-container{
@@ -336,7 +342,7 @@ img{
     /* page 3 */
 
     .page-3{
-         height:auto;
+         /* height:auto; */
         /* margin-bottom: 10%; */
     } 
     .page-3-container{
@@ -387,7 +393,7 @@ img{
          /* margin-left : 2%;
          margin-right : 2%; */
         /* margin-bottom:  120%; */
-        height:auto;
+        /* height:auto; */
      }
      .page-4-container{
          margin-top: 5%;
@@ -408,11 +414,11 @@ img{
     /* page 5 */
     .page-5{
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
         gap:5px;
-        margin-bottom: 10%;
-        height: auto;
+        /* margin-bottom: 10%; */
+        /* height: auto; */
     }
     .page-5-card{
         display: flex;
@@ -425,11 +431,19 @@ img{
     }
 
     .page-5 img{
-        width: 100% ; 
+        margin-top: 20px;
+        width: 90% ; 
 
          /* width:100%; 
         height: 70%; */
         /* object-fit: cover; */
+    }
+    .page-5 .card4 img{
+        width:200px;
+    }
+    .page-5 .card2 img{
+        width:380px;
+        height:220px;
     }
     
 
